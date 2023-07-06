@@ -94,7 +94,7 @@ a {
 
 .pic_box {
     position: relative;
-    max-width: calc(100% / 7);
+    width: 15rem;
 }
 
 .mic_status {
