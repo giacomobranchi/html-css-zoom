@@ -2,4 +2,31 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+.d_flex {
+    display: flex;
+    justify-content: end;
+}
+
+.btn_head {
+    padding: 0.5rem;
+    background-color: #4a4a4a;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 14px;
+}
+
+.btn_head_container {
+    gap: 0.5rem;
 }
