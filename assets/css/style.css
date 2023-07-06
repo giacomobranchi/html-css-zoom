@@ -5,7 +5,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* #region general */
+/* #region common */
 a {
     text-decoration: none;
 }
@@ -16,15 +16,36 @@ a {
 }
 
 #site_main {
-    height: calc(100vh - 80px);
     background-color: black;
 }
 
-/* #endregion general */
+#site_footer {
+    height: 100px;
+    background-color: #222222;
+    color: white;
+}
+
+/* #endregion common */
 
 /* #region utilities */
 .d_flex {
     display: flex;
+}
+
+.h_100 {
+    height: 100%;
+}
+
+.green {
+    color: #4bc800;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.justify_center {
+    justify-content: center;
 }
 
 .container {
@@ -63,6 +84,7 @@ a {
     max-width: 100%;
     flex-wrap: wrap;
     overflow-y: scroll;
+    height: calc(100vh - 180px);
 }
 
 .pic {
@@ -77,8 +99,49 @@ a {
 
 .mic_status {
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.301);
+    background-color: rgba(128, 128, 128, 0.486);
     color: white;
     bottom: 1rem;
     left: 0;
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+.foot_container {
+    justify-content: space-between;
+}
+
+.device_menu {
+    justify-content: space-between;
+    width: 10%;
+}
+
+.mute {
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.mute>i {
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+
+.mute>div {
+    font-size: 10px;
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.action_menu {
+    max-width: 90%;
+    justify-content: center;
+}
+
+.end_meeting {
+    color: red;
+    background-color: #4a4a4a;
+    width: 10%;
+
 }
