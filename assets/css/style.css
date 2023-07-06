@@ -25,13 +25,10 @@ a {
 /* #region utilities */
 .d_flex {
     display: flex;
-    justify-content: end;
 }
 
 .container {
     width: 90%;
-    max-width: 1170px;
-    justify-content: center;
     margin: auto;
 }
 
@@ -49,19 +46,39 @@ a {
 
 .btn_head_container {
     gap: 0.5rem;
+    justify-content: end;
 }
 
 /* #endregion header */
 
 /* #region main */
 
+.row {
+    justify-content: space-between;
+    max-width: 100%;
+}
+
 .col_7 {
     justify-content: space-between;
-    width: calc(100% / 7);
+    max-width: 100%;
     flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
 .pic {
     max-width: 100%;
     padding: 0.5rem 0.2rem;
+}
+
+.pic_box {
+    position: relative;
+    max-width: calc(100% / 7);
+}
+
+.mic_status {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.301);
+    color: white;
+    bottom: 1rem;
+    left: 0;
 }
